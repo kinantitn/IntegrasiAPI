@@ -20,7 +20,7 @@
             'Evaluasi Karyawan'=>$data["evaluasi_karyawan"],
             'Alfa'=>$data["alfa"],
             'Izin'=>$data["izin"],
-            'Hadir'=>$data["hadir"],
+            'Hadir'=>$data["hadir"]
         );
     }
 
