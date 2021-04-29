@@ -22,7 +22,9 @@
             'Alfa'=>$data["alfa"],
             'Izin'=>$data["izin"],
             'Hadir'=>$data["hadir"],
-            'Gaji'=>$data["jumlah_gaji"]
+            'Gaji'=>$data["jumlah_gaji"],
+            'TanggalB'=>$data['tanggal_bergabung'],
+            'Status'=>$data['status']
         );
     }
 
