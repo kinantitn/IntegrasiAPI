@@ -23,6 +23,7 @@
             'Izin'=>$data["izin"],
             'Hadir'=>$data["hadir"],
             'Gaji'=>$data["jumlah_gaji"],
+            'No.Rekening'=>$data["no_rek"],
             'TanggalB'=>$data['tanggal_bergabung'],
             'Status'=>$data['status']
         );
