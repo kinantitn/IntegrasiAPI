@@ -16,7 +16,8 @@
             'Jenis Kelamin'=>$data["jenis_kelamin"],
             'Alamat'=>$data["alamat"],
             'No Telepon'=>$data["no_tlpn"],
-            'Sisa Hak Cuti'=>$data["sisa_cuti"]
+            'Sisa Hak Cuti'=>$data["sisa_cuti"],
+            'Evaluasi Karyawan'=>$data["evaluasi_karyawan"]
         );
     }
 
