@@ -10,6 +10,7 @@
 
         $item[] = array(
             'NIK'=>$data["nik"],
+            'Jabatan'=>$data["jabatan_prshn"],
             'Nama Karyawan'=>$data["nama"],
             'Tanggal Lahir'=>$data["tgl_lahir"],
             'Tempat Lahir'=>$data["tempat_lahir"],
@@ -20,7 +21,8 @@
             'Evaluasi Karyawan'=>$data["evaluasi_karyawan"],
             'Alfa'=>$data["alfa"],
             'Izin'=>$data["izin"],
-            'Hadir'=>$data["hadir"]
+            'Hadir'=>$data["hadir"],
+            'Gaji'=>$data["jumlah_gaji"]
         );
     }
 
