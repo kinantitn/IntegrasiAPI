@@ -36,7 +36,7 @@ CREATE TABLE `absensi` (
   `izin` int(255) NOT NULL,
   `hadir` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+ 
 --
 -- Indexes for dumped tables
 --
