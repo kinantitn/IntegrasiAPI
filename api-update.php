@@ -10,8 +10,9 @@
 
     //Bagian ini, adalah bagian yang ingin diubah
     $SisaHakCuti = isset($_POST["sisa_cuti"]) ? $_POST["sisa_cuti"] : "";
+    $Status = isset($_POST["status"]) ? $_POST["status"] : "";
 
-    $sql = "UPDATE `data_karyawan` SET `sisa_cuti` = '".$SisaHakCuti."' 
+    $sql = "UPDATE `data_karyawan` SET `sisa_cuti` = '".$SisaHakCuti."' , `status` = '".$Status."'
     WHERE `data_karyawan`.`nik` = '".$NIK."';";
     //echo $sql;
 
