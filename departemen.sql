@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2021 at 04:23 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Waktu pembuatan: 27 Bulan Mei 2021 pada 16.57
+-- Versi server: 10.4.18-MariaDB
+-- Versi PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `utsintegrasiapi`
+-- Database: `integrasiapi`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `departemen`
+-- Struktur dari tabel `departemen`
 --
 
 CREATE TABLE `departemen` (
@@ -34,18 +34,19 @@ CREATE TABLE `departemen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `departemen`
+-- Dumping data untuk tabel `departemen`
 --
 
 INSERT INTO `departemen` (`id_dept`, `id_permohonan`, `nama_dept`) VALUES
-(7, 10000001, 'Marketing');
+(0, 10000002, 'Produksi'),
+(1, 10000001, 'Production');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `departemen`
+-- Indeks untuk tabel `departemen`
 --
 ALTER TABLE `departemen`
   ADD PRIMARY KEY (`id_dept`);

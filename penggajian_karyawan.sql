@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Bulan Mei 2021 pada 07.44
+-- Waktu pembuatan: 27 Bulan Mei 2021 pada 17.16
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 8.0.3
 
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `penggajian_karyawan` (
-  `Id_Data` int(30) NOT NULL,
-  `nik` varchar(50) NOT NULL,
+  `id_penggajian` int(30) NOT NULL,
+  `nik` int(30) NOT NULL,
   `nama_karyawan` varchar(50) NOT NULL,
   `jabatan` varchar(50) NOT NULL,
-  `total_kehadiran` varchar(50) NOT NULL,
-  `gaji` int(255) NOT NULL,
+  `id_absensi` int(30) NOT NULL,
+  `jumlah_gaji` varchar(255) NOT NULL,
   `nomor_rekening` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -45,7 +45,7 @@ CREATE TABLE `penggajian_karyawan` (
 -- Indeks untuk tabel `penggajian_karyawan`
 --
 ALTER TABLE `penggajian_karyawan`
-  ADD PRIMARY KEY (`Id_Data`);
+  ADD PRIMARY KEY (`id_penggajian`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
