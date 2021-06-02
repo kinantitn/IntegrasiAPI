@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Bulan Mei 2021 pada 17.16
+-- Waktu pembuatan: 02 Jun 2021 pada 19.28
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 8.0.3
 
@@ -29,13 +29,24 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `penggajian_karyawan` (
   `id_penggajian` int(30) NOT NULL,
-  `nik` int(30) NOT NULL,
-  `nama_karyawan` varchar(50) NOT NULL,
-  `jabatan` varchar(50) NOT NULL,
+  `nik` varchar(50) NOT NULL,
+  `nama_karyawan` varchar(30) NOT NULL,
+  `jabatan_prshn` varchar(255) NOT NULL,
   `id_absensi` int(30) NOT NULL,
   `jumlah_gaji` varchar(255) NOT NULL,
-  `nomor_rekening` int(30) NOT NULL
+  `no_rekening` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `penggajian_karyawan`
+--
+
+INSERT INTO `penggajian_karyawan` (`id_penggajian`, `nik`, `nama_karyawan`, `jabatan_prshn`, `id_absensi`, `jumlah_gaji`, `no_rekening`) VALUES
+(0, '', '', '', 0, '', 0),
+(1, '1304040605900001', 'ANDIKO PERDANA', 'Karyawan 4', 4, '8000000', 1234567891),
+(2, '1304040605900011', 'DWI ASIH RETNO PRATIWI', 'Karyawan B.2', 5, '9000000', 987654321),
+(3, '1375026004890002', 'RAMA YANTO', 'Direktur Utama', 6, '30000000', 2338802),
+(5, '134423364', 'siapa aja', 'karyawan', 23, '20003000', 12344321);
 
 --
 -- Indexes for dumped tables

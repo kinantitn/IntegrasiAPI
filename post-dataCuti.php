@@ -14,8 +14,8 @@
 
     //Query menambahkan data
     $sql = "INSERT INTO `data_pengajuan_cuti` (`id_cuti`, `nik`, `nama`, 
-    `jabatan`, `status`, `jenis_cuti`, `lama_cuti`, `keputusan`) VALUES 
-    ('".$ID_DataCuti."', '".$NIK."', '".$NamaKaryawan."', '".$Jabatan."',
+    `jabatan`, `status`, `jenis_cuti`, `lama_cuti`, `keputusan`) 
+    VALUES ('".$ID_DataCuti."', '".$NIK."', '".$NamaKaryawan."', '".$Jabatan."',
     '".$Status."', '".$JenisCuti."', '".$LamaCuti."', '".$KeputusanCuti."');";
 
     //Running Query
