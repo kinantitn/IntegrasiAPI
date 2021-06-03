@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2021 at 02:21 PM
+-- Generation Time: Jun 03, 2021 at 06:35 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -36,6 +36,13 @@ CREATE TABLE `permohonan_karyawan_baru` (
   `permintaan` varchar(50) NOT NULL,
   `keputusan` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `permohonan_karyawan_baru`
+--
+
+INSERT INTO `permohonan_karyawan_baru` (`id_permohonan`, `divisi`, `nik`, `nama_karyawan`, `jabatan`, `permintaan`, `keputusan`) VALUES
+(72972, 'Marketing', '3000051231245', 'Eka Shafira Hidajat', 'Manajer', 'Penambahan karyawan baru', 'Diterima');
 
 --
 -- Indexes for dumped tables
