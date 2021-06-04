@@ -9,13 +9,13 @@
         //echo $data["nik"]." ";
 
         $item[] = array(
-            'id_permohonan'=>$data["id_permohonan"],
+            'ID_Permohonan'=>$data["id_permohonan"],
             'divisi'=>$data["divisi"],
-            'nik'=>$data["nik"],
+            'NIK'=>$data["nik"],
             'NamaKaryawan'=>$data["nama_karyawan"],
             'jabatan'=>$data["jabatan"],
-            'permintaan'=>$data["permintaan"],
-            'keputusan'=>$data['keputusan']
+            'Permintaan'=>$data["permintaan"],
+            'Keputusan'=>$data['keputusan']
         );
     }
 
