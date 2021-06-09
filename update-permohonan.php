@@ -7,8 +7,8 @@
 
     //Bagian ini, adalah bagian yang ingin diubah
     $Keputusan = isset($_POST["keputusan"]) ? $_POST["keputusan"] : "";
-
-    $sql = "UPDATE `permohonan_karyawan_baru` SET `keputusan` = '".$Keputusan."'
+    echo $Keputusan;
+    $sql = "UPDATE `permohonan_karyawan_baru` SET `keputusan` = '".$Keputusan."' 
     WHERE `permohonan_karyawan_baru`.`id_permohonan` = '".$ID_Permohonan."';";
 
     //Running Query
@@ -25,3 +25,4 @@
     );
 
     echo json_encode($response);
+    ?>

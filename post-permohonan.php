@@ -11,10 +11,10 @@
     $Keputusan = isset($_POST["keputusan"]) ? $_POST["keputusan"] : "";
 
     //Query menambahkan data
-    $sql = "INSERT INTO `permohonan_karyawan_baru` (`id_permohonan`, `divisi` , `permintaan`, `keputusan` ,
-    `nik` , `nama_karyawan`)
-    VALUES ('".$ID_Permohonan."' , '".$divisi."' , '".$NIK."' , '".$NamaKaryawan."' , '".$Permintaan."' ,
-     '".$Keputusan."' ,);";
+    $sql = "INSERT INTO `permohonan_karyawan_baru` (`id_permohonan`, `divisi` , `nik`, `nama_karyawan` ,
+    `permintaan` , `keputusan`)
+    VALUES ('".$ID_Permohonan."', '".$divisi."', '".$NIK."', '".$NamaKaryawan."', '".$Permintaan."',
+     '".$Keputusan."');";
 
     //Running Query
     $query = mysqli_query($conn, $sql);
