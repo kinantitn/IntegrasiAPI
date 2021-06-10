@@ -13,7 +13,7 @@
     $JenisKelamin = isset($_POST["jenis_kelamin"]) ? $_POST["jenis_kelamin"] : "";
     $Alamat = isset($_POST["alamat"]) ? $_POST["alamat"] : "";
     $NoTelepon = isset($_POST["no_telp"]) ? $_POST["no_telp"] : "";
-    $ID_Cuti = isset($_POST["id_cuti"]) ? $_POST["id_cuti"] : "";
+    $ID_DataCuti = isset($_POST["id_cuti"]) ? $_POST["id_cuti"] : "";
     $SisaHakCuti = isset($_POST["sisa_cuti"]) ? $_POST["sisa_cuti"] : "";
     $ID_Penilaian = isset($_POST["id_penilaian"]) ? $_POST["id_penilaian"] : "";
     $EvaluasiKaryawan = isset($_POST["evaluasi_karyawan"]) ? $_POST["evaluasi_karyawan"] : "";
@@ -27,7 +27,7 @@
     `tgl_lahir`, `tempat_lahir`, `jenis_kelamin`, `alamat`, `no_telp`, `id_cuti`, `sisa_cuti`, 
     `id_penilaian`, `evaluasi_karyawan`, `id_penggajian`, `no_rekening`, `id_dept`, 
     `status`) VALUES ('".$NIK."', '".$Jabatan."', '".$NamaKaryawan."', '".$Tanggal_Lahir."', 
-    '".$TempatLahir."', '".$JenisKelamin."', '".$Alamat."', '".$NoTelepon."', '".$ID_Cuti."', 
+    '".$TempatLahir."', '".$JenisKelamin."', '".$Alamat."', '".$NoTelepon."', '".$ID_DataCuti."', 
     '".$SisaHakCuti."', '".$ID_Penilaian."', '".$EvaluasiKaryawan."', '".$ID_Penggajian."', 
     '".$NoRekening."', '".$ID_Departemen."', '".$Status."');";
     //echo $sql;
@@ -36,9 +36,9 @@
     //Running Query
     $query = mysqli_query($conn, $sql);
     if($query){
-        $msg = "Data Berhasil Ditambahkan";
+        $msg = "Data Karyawan Berhasil Ditambahkan";
     }else{
-        $msg = "Data Gagal Ditambahkan";
+        $msg = "Data Karyawan Ditambahkan";
     }
     //echo $msg;
     $response = array(
